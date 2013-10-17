@@ -1,9 +1,9 @@
 <modification>
 	<id><![CDATA[Product pictures in order email]]></id>
-	<version><![CDATA[1.4]]></version>
+	<version><![CDATA[1.5]]></version>
 	<vqmver><![CDATA[2.1.7]]></vqmver>
 	<author><![CDATA[OC2PS]]></author>
-	<file name="catalog/view/theme/default/template/mail/order.tpl">
+	<file name="catalog/view/theme/*/template/mail/order.tpl">
 		<operation>
 			<search position="replace"><![CDATA[<?php echo $product['name']; ?>]]></search>
 			<add><![CDATA[<a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" title="<?php echo $product['name']; ?>" style="float:left;" /></a><?php echo " "; ?><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?><a href="<?php echo $product['href']; ?>"></a>]]></add>
